@@ -32,7 +32,7 @@ button {
 	cursor: pointer;
 	display: inline-block;
 	background: pink;
-	color: white;
+	color: rgb(85, 85, 85);
 	font-size: 18px;
 	border: 0;
 	padding: 15px;
@@ -56,7 +56,7 @@ button:hover {
 /* Font Awesome icons */
 
 i {
-	font-size: 30px;
+	font-size: 28px;
 	padding-bottom: 15px;
 	color: rgb(255, 113, 137);
 }

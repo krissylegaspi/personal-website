@@ -42,7 +42,7 @@ export default {
 
 .box {
     position: fixed;
-    width: 800px;
+    width: 650px;
     height: 325px;
     top: 50%;
     left: 50%;
@@ -57,11 +57,12 @@ export default {
 
 .box .content {
     padding-left: 20px;
+    margin-left: 0;
 }
 
 .box .content h1 {
     margin: 0;
-    padding-top: 30px;
+    padding-top: 20px;
     padding-left: 0;
     padding-right: 10px;
     display: inline-grid;
@@ -73,18 +74,20 @@ export default {
 .box .content p {
     margin: 0;
     padding: 10px 0 10px;
+    padding-left: 30px;
     text-align: justify;
-    display: inline-block;
+    display: flex;
     margin-bottom: 1rem;
 }
 
-header {
+.box header {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center; */
+    /* align-items: center; */
     margin-bottom: 20px;
     text-align: center;
     border: 3px;
+    padding-left: 30px;
 }
 
 img {
@@ -112,9 +115,9 @@ i {
     padding-left: 10px;
     padding-bottom: 10px; */
     display: inline-block;
-	font-size: 30px;
+	font-size: 28px;
 	padding-bottom: 15px;
-	color: rgb(255, 113, 137);
+	color: rgb(255, 154, 171);
 }
 
 i:hover {
