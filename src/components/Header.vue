@@ -72,9 +72,10 @@ export default {
 
 .box .content p {
     margin: 0;
-    padding: 10px 0 0;
+    padding: 10px 0 10px;
     text-align: justify;
     display: inline-block;
+    margin-bottom: 1rem;
 }
 
 header {
