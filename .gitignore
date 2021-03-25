@@ -24,4 +24,4 @@ pnpm-debug.log*
 
 # Updates deployed website gh-pages // command line : git sync-ghpages
 [alias]
-	sync-ghpages = !git checkout gh-pages && git rebase main && git push origin gh-pages && git checkout main
+sync-ghpages = !git checkout gh-pages && git rebase main && git push origin gh-pages && git checkout main

@@ -9,7 +9,6 @@
 </template>
 
 <script>
-import Socials from './Socials'
 
 export default {
     name: 'Button',
@@ -38,7 +37,7 @@ export default {
         }
     },
     components: {
-        Socials
+        
     }
 }
 </script>
