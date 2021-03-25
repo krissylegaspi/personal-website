@@ -1,17 +1,14 @@
 <template>
-    <Pfp />
     <Header />
 </template>
 
 <script>
 import Header from './components/Header'
-import Pfp from './components/Pfp'
 
 export default {
 	name: 'App',
 	components: {
 		Header,
-		Pfp,
 	},
 	data() {
 		return {

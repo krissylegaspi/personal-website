@@ -1,9 +1,14 @@
 <template>
+    <div class="box">
+        <img v-bind:class="gender" src="../assets/profile-zoom.jpg" v-bind:alt="`${firstName} ${lastName}`" />
+        <div class="content">
+        <h1>{{ title }}</h1><a href="mailto:kg.lgsp@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+        <p>MS in Computer Science at Georgia Tech</p>
+        </div>
     <header>
-        <h1>{{ title }}</h1>
-        <a href="mailto:kg.lgsp@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
         <Button text="Social Links" />
     </header>
+    </div>
 </template>
 
 <script>
@@ -19,11 +24,59 @@ export default {
     },
     components: {
         Button
+    },
+    methods: {
+        
+    },
+    data() {
+        return {
+            firstName: "Kristine",
+            lastName: "Legaspi",
+            gender: "female",
+        }
     }
 }
 </script>
 
 <style scoped>
+
+.box {
+    position: fixed;
+    width: 800px;
+    height: 325px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    box-sizing: border-box;
+    background: transparent;
+    border-radius: 4px;
+    /* display: flex; */
+    vertical-align: middle;
+}
+
+.box .content {
+    padding-left: 20px;
+}
+
+.box .content h1 {
+    margin: 0;
+    padding-top: 30px;
+    padding-left: 0;
+    padding-right: 10px;
+    display: inline-grid;
+    margin-bottom: 1rem;
+    font-weight: normal;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.box .content p {
+    margin: 0;
+    padding: 10px 0 0;
+    text-align: justify;
+    display: inline-block;
+}
+
 header {
     display: flex;
     justify-content: center;
@@ -33,8 +86,39 @@ header {
     border: 3px;
 }
 
-h1 {
-margin-bottom: 1rem;
-font-weight: normal;
+img {
+    float: left;
+    display: block;
+	border-radius: 50%;
+	border: 5px #333 solid;
+	margin-bottom: 1rem;
+    /* vertical-align: middle; */
 }
+
+.female {
+	border-color: pink;
+	background-color: pink;
+	color: #333;
+	max-width: 70%;
+	max-height: 70%;
+}
+
+/* Font Awesome icons */
+
+i {
+    /* padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px; */
+    display: inline-block;
+	font-size: 30px;
+	padding-bottom: 15px;
+	color: rgb(255, 113, 137);
+}
+
+i:hover {
+	color: pink;
+	opacity: 80;
+}
+
 </style>
