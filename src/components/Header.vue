@@ -2,7 +2,7 @@
     <div class="box">
         <img v-bind:class="gender" src="../assets/profile-zoom.jpg" v-bind:alt="`${firstName} ${lastName}`" />
         <div class="content">
-        <h1>{{ title }}</h1><a href="mailto:kg.lgsp@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+        <h1>{{ title }}</h1><a href="mailto:contact@kristinelegaspi.com" target="_blank"><i class="fas fa-envelope"></i></a>
         <p>MS in Computer Science at Georgia Tech</p>
         </div>
     <header>
