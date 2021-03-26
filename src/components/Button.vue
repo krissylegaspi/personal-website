@@ -1,5 +1,5 @@
 <template>
-    <button id="slid" @click="onClick()" class="button">{{text}}</button>
+    <!-- <button id="slid" @click="onClick()" class="button">{{text}}</button> -->
     <h2 id="slide-text"><code>
         <a href="https://www.linkedin.com/in/kristine-legaspi/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
         <a href="https://github.com/krissylegaspi" target="_blank"><i class="fab fa-github"></i></a>
@@ -17,7 +17,6 @@ export default {
     },
     methods: {
         onClick() {
-            console.log("Click")
             var slidBtn = document.getElementById("slid"),
                 slideText = document.getElementById("slide-text");
 
@@ -44,10 +43,10 @@ export default {
 
 <style scoped>
 h2 {
-    padding: 10px;
+    padding-left: 20px;
     margin: 20px;
     color: black;
-    opacity: 0;
+    /* opacity: 0; */
 }
 
 h2#slide-text {
