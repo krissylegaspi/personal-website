@@ -21,6 +21,7 @@ pnpm-debug.log*
 *.njsproj
 *.sln
 *.sw?
+.txt
 
 # Updates deployed website gh-pages // command line : git sync-ghpages
 [alias]

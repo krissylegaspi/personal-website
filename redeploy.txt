@@ -1,0 +1,5 @@
+1. delete dist folder
+2. in Main branch, git add, commit, push
+3. npm run build
+4. in Main branch, git add, commit, push
+5. npm run deploy

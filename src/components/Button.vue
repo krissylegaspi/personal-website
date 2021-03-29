@@ -3,8 +3,9 @@
     <h2 id="slide-text"><code>
         <a href="https://www.linkedin.com/in/kristine-legaspi/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
         <a href="https://github.com/krissylegaspi" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="" target="_blank"><i class="fab fa-codepen"></i></a>
-        <a href="" target="_blank"><i class="far fa-file-alt"></i></a>
+        <a href="https://codepen.io/krissylegaspi" target="_blank"><i class="fab fa-codepen"></i></a>
+        <!-- <a @click="openResume()" target="_blank"><i class="far fa-file-alt"></i></a> -->
+        <a href="./Legaspi.Kristine.Resume.pdf" target="_blank"><i class="far fa-file-alt"></i></a>
     </code></h2>
 </template>
 
@@ -16,6 +17,10 @@ export default {
         text: String,
     },
     methods: {
+        // openResume() {
+        //     var pdf = '/src/assets/Resume/Legaspi.Kristine.Resume.pdf';
+        //     window.open(pdf);
+        // },
         onClick() {
             var slidBtn = document.getElementById("slid"),
                 slideText = document.getElementById("slide-text");

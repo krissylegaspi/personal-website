@@ -1,24 +1,49 @@
 <template>
-    <Header />
+	<div class="app" :class="mode">
+		<Navigation :mode="mode" @toggle="toggle" />
+		<Header />
+	</div>
 </template>
 
 <script>
-import Header from './components/Header'
+import Header from '@/components/Header'
+import Toggle from '@/components/Toggle'
+import Navigation from '@/components/Navigation'
 
 export default {
-	name: 'App',
-	components: {
-		Header,
-	},
+	name: 'app',
 	data() {
 		return {
-			
+			mode: 'light'
+		}
+	},
+	components: {
+		Header,
+		Navigation,
+		Toggle
+	},
+	created () {
+		window.addEventListener('keyup', this.keyPress)
+	},
+	methods: {
+		keypress (e) {
+			if (e.key === 't') {
+				this.toggle()
+			}
+		},
+		toggle () {
+			if (this.mode === "dark") {
+				this.mode = "light"
+			} else {
+				this.mode = "dark"
+			}
 		}
 	}
 }
 </script>
 
 <style>
+/* 
 #app {
     font-family: Avenir, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -26,6 +51,26 @@ export default {
     text-align: center;
     color: #2c3e50;
     margin-top: 60px;
+} 
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.app {
+	width: 100vw;
+	min-height: 100vh;
+    background: white;
+    color: black;
+	transition: background 0.3s ease-in-out;
+}
+
+.dark {
+    background: rgb(49, 48, 61);
+    color: white;
 }
 
 button {

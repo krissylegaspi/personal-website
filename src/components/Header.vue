@@ -63,7 +63,7 @@ export default {
 .box .content h1 {
     margin: 0;
     padding-top: 30px;
-    padding-left: 0;
+    padding-left: 29px;
     padding-right: 10px;
     display: inline-grid;
     margin-bottom: 1rem;
