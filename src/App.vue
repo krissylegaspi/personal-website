@@ -1,14 +1,16 @@
 <template>
 	<div class="app" :class="mode">
+		<!-- <Header /> -->
 		<Navigation :mode="mode" @toggle="toggle" />
-		<Header />
+		<router-view />
 	</div>
 </template>
 
 <script>
-import Header from '@/components/Header'
+// import Header from '@/components/Header'
 import Toggle from '@/components/Toggle'
 import Navigation from '@/components/Navigation'
+import Tab from '@/components/Tab'
 
 export default {
 	name: 'app',
@@ -18,9 +20,10 @@ export default {
 		}
 	},
 	components: {
-		Header,
+		// Header,
 		Navigation,
-		Toggle
+		Toggle,
+		Tab
 	},
 	created () {
 		window.addEventListener('keyup', this.keyPress)
@@ -57,11 +60,11 @@ export default {
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Lexend', sans-serif;
 }
 
 .app {
-	width: 100vw;
+	width: 100%;
 	min-height: 100vh;
     background: white;
     color: black;

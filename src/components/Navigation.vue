@@ -1,15 +1,15 @@
 <template>
     <header>
-        <!-- <h1>{{ mode }} Mode</h1> -->
         <Toggle :mode="mode" @toggle="$emit('toggle')" />
     </header>
-    <div class="nav-bar">
+    <div class="nav-bar" id="nav">
         <ul>
-        <a href="https://kristinelegaspi.com/">HOME</a>
-        <a href="#">PORTFOLIO</a>
-        <a href="#">BLOG</a>
-        <a href="#">ABOUT</a>
-        <a href="#">CONTACT</a>
+        <router-link to="/">HOME</router-link>
+        <router-link to="/portfolio">PORTFOLIO</router-link>
+        <router-link to="/shop">SHOP</router-link>
+        <router-link to="/blog">BLOG</router-link>
+        <router-link to="/about">ABOUT</router-link>
+        <router-link to="/contact" id="pls">HIRE ME</router-link>
         </ul>
     </div>
 </template>
@@ -32,7 +32,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 25px;
+    /* padding: 0px 25px; */
+    padding-left: 25px;
     height: 60px;
     background: white;
     transition: background 0.3s ease-in-out;
@@ -96,11 +97,20 @@ header h1 {
     margin: 0 auto;
     display: flex;
     justify-content: center;
+    padding-bottom: 50px;
 }
 
 .nav-bar .ul {
     display: flex;
     list-style-type: none;
+}
+
+/* #pls {
+    color: rgb(255, 113, 137);
+} */
+
+#pls:hover {
+    color: rgb(255, 113, 137);
 }
 
 .nav-bar .ul .active {
@@ -112,7 +122,7 @@ header h1 {
 }
 
 .nav-bar a {
-    font-size: 25px;
+    font-size: 26px;
     color: var(--text);
     /* font-weight: bold; */
     text-decoration: none;
