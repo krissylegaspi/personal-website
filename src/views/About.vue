@@ -41,10 +41,10 @@
                     I am actively applying to internships and jobs and prepping and studying for interviews.
                 </p>
                 <p>
-                    I am learning how to code in C, Python, and Java through various university classes and R and C++ in my free time.
+                    I am learning how to code in C, Python, and Java through various university classes and R and C++ in my free time. 
                 </p>
                 <p>
-                    I am also working on more personal projects to learn more languages and expand my programming knowledge and skills.
+                    I am also <p1>contributing to open source projects</p1> and working on more personal projects to learn more languages and expand my programming knowledge and skills.
                 </p>
                 <p>
                     I am a member of <p1>Society of Women Engineers</p1>.

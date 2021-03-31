@@ -242,47 +242,25 @@
         </div>
     </div>
 
+    <div class="title"><h1>Open Source Contributions</h1></div>
+    <!-- <div class="box"> -->
+        <div class="links">
+            <ul>
+                <li><a href="https://github.com/fibanneacci/liar" target="_blank">Liar</a></li>
+                <li><a href="https://github.com/DevvitIO/ReallyAnnoyingDirectory" target="_blank">ReallyAnnoyingDirectory</a></li>
+            </ul>
+        </div>
+    <!-- </div> -->
+
     <div class="title"><h1>Art</h1></div>
-    <div class="box">
-    <!-- Photography -->
-        <div class="flip-container">
-            <div class="flipper">
-                <div class="card_front">
-                    <div class="Photography"></div>
-                    <div class="center">
-                        <p><b style="color: rgb(255, 113, 137)">Photography</b></p>
-                        <p>Nikon D90</p>
-                        <p>iPhone 11 Pro Max</p>
-                        <p>Adobe Lightroom</p>
-                        <p>Adobe Photoshop</p>
-                    </div>
-                </div>
-                <div class="card_back">
-                    <button><a href="./lake.jpg" target="_blank">Lake</a></button>
-                </div>
-            </div>
+    <!-- <div class="box"> -->
+        <div class="links">
+            <ul>
+                <li><a href="./art1.jpg" target="_blank">Pencil Portrait</a></li>
+                <li><a href="./hs.jpg" target="_blank">Collection of Traditional Art</a></li>
+            </ul>
         </div>
-
-    <!-- Drawing -->
-        <div class="flip-container">
-            <div class="flipper">
-                <div class="card_front">
-                    <div class="Drawing"></div>
-                    <div class="center">
-                        <p><b style="color: rgb(255, 113, 137)">Drawing</b></p>
-                        <p>iPad Pro 11"</p>
-                        <p>Procreate</p>
-                        <p>Adobe Photoshop</p>
-                    </div>
-                </div>
-                <div class="card_back">
-                    <button><a href="./art1.jpg" target="_blank">Portrait</a></button>
-                    <button><a href="./hs.jpg" target="_blank">Traditional</a></button>
-                </div>
-            </div>
-        </div>
-
-    </div>
+    <!-- </div> -->
 
 </template>
 
@@ -296,17 +274,13 @@ export default {
 
 body {
     background: rgb(224, 224, 224);
-    /* mix-blend-mode: difference; */
 }
 
 .title {
     border-bottom: 5px pink solid;
     width: 300px;
-    /* height: 3px; */
     margin: auto;
     opacity: 1;
-    /* border-bottom: 5px rgb(238,174,202); */
-    /* background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%); */
     content: '';
     box-sizing: border-box;
 }
@@ -317,14 +291,9 @@ body {
     padding-bottom: 10px;
     font-size: 24px;
     font-family: 'Roboto Mono', monospace;
-    /* background: -webkit-linear-gradient(rgba(238,174,202,1), rgba(148,187,233,1));
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent; */
 }
 
 .box {
-    /* position: absolute; */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -332,9 +301,31 @@ body {
     margin-top: 40px;
     margin-left: auto;
     margin-right: auto;
-    /* top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%); */
+    padding-bottom: 40px;
+}
+
+.links {
+    justify-content: center;
+    /* max-width: 1200px; */
+    /* margin-top: 40px; */
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    display: table;
+    text-align: left;
+    align-items: center;
+    margin-top: 10px;
+    max-width: 230px;
+}
+
+.links ul li a {
+    color: var(--text);
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Lexend', sans-serif;
+    text-align: left;
+    font-size: 20px;
 }
 
 .flip-container {
@@ -454,7 +445,6 @@ body {
 }
 
 .KrisBot {
-    /* padding-top: 35px; */
     position: relative;
     height: 30%;
     top: 0;
@@ -469,7 +459,6 @@ body {
 }
 
 .Yams {
-    /* padding-top: 35px; */
     position: relative;
     height: 30%;
     top: 0;
@@ -484,7 +473,6 @@ body {
 }
 
 .TreasureHunt {
-    /* padding-top: 35px; */
     position: relative;
     height: 30%;
     top: 0;
@@ -499,7 +487,6 @@ body {
 }
 
 .IncomePrediction {
-    /* padding-top: 35px; */
     position: relative;
     height: 30%;
     top: 0;
@@ -514,7 +501,6 @@ body {
 }
 
 .HandwritingRecognition {
-    /* padding-top: 35px; */
     position: relative;
     height: 30%;
     top: 0;
