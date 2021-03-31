@@ -1,8 +1,8 @@
 <template>
     <div class="about">
         <div class="text">
-            <h2>Hi, my name is Kristine</h2>
             <body>
+            <h2>Hi, my name is Kristine</h2>
                 <p>
                     I also go by Krissy. I am currently a graduate student.
                 </p>
@@ -20,6 +20,9 @@
                     I have demonstrated leadership, time management, and planning skills from being the <p1>Vice President of Finance</p1> at University of California Riverside. I lead and supervised a team of 5 and I created timelines and annual budgets. We held weekly goal-setting meetings that I prepared for and facilitated. I <p1>raised $20,000</p1> towards the Alzheimer's Disease Research through a large organized event with an attendance of about 200 people.
                 </p>
                 <p>
+                    As a <p1>Social Media Marketing Intern</p1> for <a href="https://CollegeFashionista.com" target="_blank">CollegeFashionista</a>, I contributed original content about the latest fashion trends to inspire over 33,000 college-aged followers. I designed and photographed stylish outfits to include in original article posts. I published articles and met monthly deadlines. Due to my diligence and success, I was fortunate enough to have been chosen to participate in their Ulta collaboration and was <p1>featured in <a href="https://www.collegefashionista.com/ulta-beauty-2/" target="_blank">this article</a></p1>.
+                </p>
+                <p>
                     I am self-motivated and my problems solving skills were gained from my own projects as well as hackathon projects.
                 </p>
                 <p>
@@ -31,9 +34,9 @@
                 <p>
                     I have completed courses related to databases and algorithms.
                 </p>
-            </body>
+            
             <h2>Right now</h2>
-            <body>
+            
                 <p>
                     I am actively applying to internships and jobs and prepping and studying for interviews.
                 </p>
@@ -46,9 +49,9 @@
                 <p>
                     I am a member of <p1>Society of Women Engineers</p1>.
                 </p>
-            </body>
+            
             <h2>On my free time</h2>
-            <body>
+            
                 <p>
                     I like to read, draw, film, snowboard, camp, and travel.
                 </p>
@@ -58,6 +61,22 @@
                         <li>Fahrenheit 451 by Ray Bradbury</li>
                         <li>1984 by George Orwell</li>
                         <li>The Giver by Lois Lowry</li>
+                    </ul>
+                </p>
+            
+            <h2>Licenses and Certificates</h2>
+            
+                <p>
+                    Licenses:
+                    <ul>
+                        <li>California Notary Public, 2019-2023</li>
+                    </ul>
+                </p>
+                <p>
+                    Certificates:
+                    <ul>
+                        <li><a href="./Legaspi_Kristine_CS50x.pdf" target="_blank">CS50 - Harvard University, 2020</a></li>
+                        <li><a href="./Legaspi_Kristine_SMC_Certificate2.pdf" target="_blank">Entry Level Programmer - Santa Monica College, 2020</a></li>
                     </ul>
                 </p>
             </body>
@@ -105,6 +124,7 @@ ul {
 }
 
 .about .text body p {
+    margin-top: 10px;
     margin-bottom: 10px;
 }
 
@@ -121,7 +141,8 @@ ul {
 h2 {
     font-size:22px;
     margin-top: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    font-family: 'Roboto Mono', monospace;
 }
 
 </style>

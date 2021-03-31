@@ -46,6 +46,8 @@ export default {
 </script>
 
 <style>
+/* @import url("https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"); */
+
 /* 
 #app {
     font-family: Avenir, Helvetica, Arial, sans-serif;

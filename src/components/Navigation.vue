@@ -9,7 +9,8 @@
         <router-link to="/shop">SHOP</router-link>
         <router-link to="/blog">BLOG</router-link>
         <router-link to="/about">ABOUT</router-link>
-        <router-link to="/contact" id="pls">HIRE ME</router-link>
+        <!-- <router-link to="/contact" id="pls">HIRE ME</router-link> -->
+        <a href="mailto:contact@kristinelegaspi.com" id="pls">HIRE ME</a>
         </ul>
     </div>
 </template>
@@ -97,7 +98,7 @@ header h1 {
     margin: 0 auto;
     display: flex;
     justify-content: center;
-    padding-bottom: 50px;
+    padding-bottom: 40px;
 }
 
 .nav-bar .ul {
