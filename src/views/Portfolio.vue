@@ -1,5 +1,5 @@
 <template>
-    <div class="title"><h1>Personal Projects</h1></div>
+    <div class="title"><h1>Projects</h1></div>
     <div class="box">
     <!-- SaltNPrepr -->
         <div class="flip-container">
@@ -265,20 +265,25 @@
 </template>
 
 <script>
-export default {
+import Toggle from '@/components/Toggle'
 
+export default {
+    props: ['mode'],
+    components: {
+        Toggle
+    }
 }
 </script>
 
 <style scoped>
 
 body {
-    background: rgb(224, 224, 224);
+    background: rgb(255, 255, 255);
 }
 
 .title {
     border-bottom: 5px pink solid;
-    width: 300px;
+    width: 325px;
     margin: auto;
     opacity: 1;
     content: '';
@@ -297,7 +302,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    max-width: 1200px;
+    max-width: 875px;
     margin-top: 40px;
     margin-left: auto;
     margin-right: auto;
@@ -334,7 +339,7 @@ body {
     margin-bottom: 35px;
     display: inline-block;
     margin: 0 auto;
-    padding-left: 50px;
+    padding-left: 10px;
     padding-bottom: 50px;
     width: 80%;
     height: 50%;
@@ -345,8 +350,8 @@ body {
 }
 
 .flip-container, .card_front, .card_back {
-    width: 320px;
-    height: 380px;
+    width: 240px;
+    height: 320px;
 }
 
 .flipper {
@@ -361,7 +366,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    box-shadow: 0 0.8rem 1rem rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0.5rem 0.8rem rgba(0, 0, 0, 0.15);
     border-radius: 10px;
 }
 
@@ -372,12 +377,11 @@ body {
     align-items: center;
     flex-direction: column;
     overflow: hidden;
-    font-size: 1.3em;
-    font-size: 18px;
+    font-size: 12px;
 }
 
 .card_front b {
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .card_back {
@@ -390,11 +394,11 @@ body {
 }
 
 .card_back p {
-    padding: 10px 30px;
+    padding: 10px 20px;
     text-align: center;
     line-height: 1.68;
-    font-size: 18px;
-    margin-bottom: 30px;
+    font-size: 14px;
+    margin-bottom: 20px;
 }
 
 .card_back button {
