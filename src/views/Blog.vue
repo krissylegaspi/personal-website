@@ -142,12 +142,20 @@
         </div>
     </div>
 
-    <!-- High School, March 2021 -->
+    <!-- High School 2010-2014 -->
     <div class="post">
         <h2>
             <router-link to="/blog/Undated/High-School" @click="$scrollToTop">What I did in high school</router-link>
         </h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco...</p>
+        <p>International Baccalaureate Programme: I am an IB Diploma recipient. This program requires completion of: 2 High Level classes, 4 Standard Level classes, Theory of Knowledge (TOK) class...</p>
+    </div>
+
+    <!-- My guiding principles -->
+    <div class="post">
+        <h2>
+            <router-link to="/blog/Undated/Guide" @click="$scrollToTop">My guiding principles</router-link>
+        </h2>
+        <p>International Baccalaureate Programme: I am an IB Diploma recipient. This program requires completion of: 2 High Level classes, 4 Standard Level classes, Theory of Knowledge (TOK) class...</p>
     </div>
 
 </template>
@@ -166,6 +174,7 @@ import Waves from './Blogs/2015/Waves'
 import Anchor from './Blogs/2015/Anchor'
 import Time from './Blogs/2013/Time'
 import HighSchool from './Blogs/Undated/HighSchool'
+import Guide from './Blogs/Undated/Guide'
 
 export default {
     name: "Blog",
@@ -182,7 +191,8 @@ export default {
         Waves,
         Anchor,
         Time,
-        HighSchool
+        HighSchool,
+        Guide
     }
 }
 </script>

@@ -23,6 +23,7 @@ import Waves from '../views/Blogs/2015/Waves.vue'
 import Anchor from '../views/Blogs/2015/Anchor.vue'
 import Time from '../views/Blogs/2013/Time.vue'
 import HighSchool from '../views/Blogs/Undated/HighSchool.vue'
+import Guide from '../views/Blogs/Undated/Guide.vue'
 
 const routes = [
   {
@@ -130,6 +131,11 @@ const routes = [
     name: 'HighSchool',
     component: HighSchool
   },
+  {
+    path: '/blog/Undated/Guide',
+    name: 'Guide',
+    component: Guide
+  }
 ]
 
 const router = createRouter({
