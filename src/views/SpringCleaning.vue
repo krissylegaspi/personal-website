@@ -1,5 +1,4 @@
 <template>
-    <!-- <component v-bind:is="activeTab" /> -->
     <div class="back">
         <a href="javascript:history.back()">
             <i class="fas fa-angle-double-left"></i>
@@ -23,17 +22,7 @@
 
 <script>
 export default {
-    data () {
-        return {
-            id: this.$route.params.id,
-            blog: {}
-        }
-    },
-    created() {
-        this.$http.get('https://kristinelegaspi.com/blog' + this.id).then(function(data) {
-            this.blog = data.body;
-        });
-    }
+    name: 'SpringCleaning',
 }
 
 </script>

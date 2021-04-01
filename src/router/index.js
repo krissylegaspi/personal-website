@@ -7,24 +7,6 @@ import Blog from '../views/Blog.vue'
 import About from '../views/About.vue'
 import Contact from '../views/Contact.vue'
 
-// Blog Posts
-import SpringCleaning from '../views/Blogs/2021/SpringCleaning.vue'
-
-import Hacktech from '../views/Blogs/2020/Hacktech.vue'
-import SDHacks from '../views/Blogs/2019/SDHacks.vue'
-
-import HelloAgain from '../views/Blogs/2018/HelloAgain.vue'
-import Villain from '../views/Blogs/2016/Villain.vue'
-import Nico from '../views/Blogs/2016/Nico.vue'
-import TakeALoadOff from '../views/Blogs/2016/TakeALoadOff.vue'
-import KeepWarmStayTrendy from '../views/Blogs/2016/KeepWarmStayTrendy.vue'
-import MorningHike from '../views/Blogs/2015/MorningHike.vue'
-import Waves from '../views/Blogs/2015/Waves.vue'
-import Anchor from '../views/Blogs/2015/Anchor.vue'
-import Time from '../views/Blogs/2013/Time.vue'
-import HighSchool from '../views/Blogs/Undated/HighSchool.vue'
-import Guide from '../views/Blogs/Undated/Guide.vue'
-
 const routes = [
   {
     path: '/',
@@ -43,8 +25,25 @@ const routes = [
   },
   {
     path: '/blog',
-    name: 'Blog',
-    component: Blog
+    name: 'AllBlogs',
+    component: Shop,
+    // children: [
+    //   {
+    //     path: "Sample",
+    //     name: "ItsSample",
+    //     component: () => import('../views/Blogs/2021/Sample.vue')
+    //   },
+    //   {
+    //     path: "Spring-Cleaning",
+    //     name: "ItsSpring",
+    //     component: () => import('../views/Blogs/2021/SpringCleaning.vue')
+    //   },
+    //   {
+    //     path: "Hacktech",
+    //     name: "Hack-tech",
+    //     component: () => import('../views/Blogs/2020/Hacktech.vue')
+    //   }
+    // ]
   },
   // {
   //   path: '/game',
@@ -63,78 +62,86 @@ const routes = [
   },
 
   // -----------Blog Posts-----------
+  // {
+  //   path: '/sample/:id',
+  //   name: 'Sample',
+  //   props: true,
+  //   component: () => import('../views/Blogs/2021/Sample.vue')
+  // },
+  // {
+  //   path: '/blog/:id',
+  //   name: 'ItsSpring',
+  //   props: true,
+  //   component: () => import('../views/Blogs/2021/SpringCleaning.vue')
+  // },
+  // {
+  //   path: '/blog/:id',
+  //   name: 'Hack-tech',
+  //   component: () => import('../views/Blogs/2020/Hacktech.vue')
+    
+  // },
   {
-    path: '/blog/2021/Spring-Cleaning',
-    name: 'SpringCleaning',
-    component: SpringCleaning
+    path: '/blog/:id',
+    name: 'SD-Hacks',
+    component: () => import('../views/Blogs/2019/SDHacks.vue')
   },
   {
-    path: '/blog/2020/Hacktech',
-    name: 'Hacktech',
-    component: Hacktech
+    path: '/blog/:id',
+    name: 'Hello-Again',
+    component: () => import('../views/Blogs/2018/HelloAgain.vue')
   },
   {
-    path: '/blog/2019/SD-Hacks',
-    name: 'SDHacks',
-    component: SDHacks
+    path: '/blog/:id',
+    name: 'The-Villain',
+    component: () => import('../views/Blogs/2016/Villain.vue')
   },
   {
-    path: '/blog/2018/Hello-Again',
-    name: 'HelloAgain',
-    component: HelloAgain
+    path: '/blog/:id',
+    name: 'Nico-Pup',
+    component: () => import('../views/Blogs/2016/Nico.vue')
   },
   {
-    path: '/blog/2016/Villain',
-    name: 'Villain',
-    component: Villain
+    path: '/blog/:id',
+    name: 'Take-Off',
+    component: () => import('../views/Blogs/2016/TakeALoadOff.vue')
   },
   {
-    path: '/blog/2016/Nico',
-    name: 'Nico',
-    component: Nico
+    path: '/blog/:id',
+    name: 'Keep-Warm',
+    component: () => import('../views/Blogs/2016/KeepWarmStayTrendy.vue')
   },
   {
-    path: '/blog/2016/Take-A-Load-Off',
-    name: 'TakeALoadOff',
-    component: TakeALoadOff
+    path: '/blog/:id',
+    name: 'Morning-Hike',
+    component: () => import('../views/Blogs/2015/MorningHike.vue')
   },
   {
-    path: '/blog/2016/Keep-Warm-Stay-Trendy',
-    name: 'KeepWarmStayTrendy',
-    component: KeepWarmStayTrendy
+    path: '/blog/:id',
+    name: 'The-Waves',
+    component: () => import('../views/Blogs/2015/Waves.vue')
   },
   {
-    path: '/blog/2015/Morning-Hike',
-    name: 'MorningHike',
-    component: MorningHike
+    path: '/blog/:id',
+    name: 'The-Anchor',
+    component: () => import('../views/Blogs/2015/Anchor.vue')
   },
   {
-    path: '/blog/2015/Waves',
-    name: 'Waves',
-    component: Waves
-  },
-  {
-    path: '/blog/2015/Anchor',
-    name: 'Anchor',
-    component: Anchor
-  },
-  {
-    path: '/blog/2013/Time',
-    name: 'Time',
-    component: Time
+    path: '/blog/:id',
+    name: 'The-Time',
+    component: () => import('../views/Blogs/2013/Time.vue')
   },
 
   // -----------UNDATED-----------
 
   {
-    path: '/blog/Undated/High-School',
-    name: 'HighSchool',
-    component: HighSchool
+    path: '/blog/:id',
+    name: 'HS',
+    component: () => import('../views/Blogs/Undated/HighSchool.vue')
   },
   {
-    path: '/blog/Undated/Guide',
-    name: 'Guide',
-    component: Guide
+    path: '/blog/:id',
+    name: 'The-Guide',
+    component: () => import('../views/Blogs/Undated/Guide.vue')
   }
 ]
 

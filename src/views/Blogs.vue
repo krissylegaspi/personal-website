@@ -1,11 +1,8 @@
 <template>
-    <router-view />
     <!-- Introduction -->
     <div class="box">
         I am grateful for all that I have learned and for all that I will learn. Welcome to this space where I can document my journey and share stories of victories, struggles, and everything in between!
     </div>
-
-    <router-link to="/blog/Sample" @click="$scrollToTop">Yes</router-link>
 
     <!-- Blog Directory -->
 
@@ -20,7 +17,10 @@
                 @click="$scrollToTop">
                 Spring Cleaning
             </router-link> -->
-            <router-link to="/blog/Spring-Cleaning">Spring Cleaning</router-link>
+            <router-link to="/blog/Spring-Cleaning" 
+                @click="$scrollToTop">
+                Spring Cleaning
+            </router-link>
             <h2 id="date">March 2021</h2>
         </h2>
         <p>Spring has arrived and I am excited because this is my favorite season. I love watching the leaves grow back, the flowers bloom, and the warm sun kissing my skin. Longer days are ahead...</p>
@@ -42,7 +42,7 @@
     <!-- SD Hacks, October 2019 -->
     <div class="post">
         <h2>
-            <router-link to="/blog/2019/SD-Hacks">SD Hacks</router-link>
+            <router-link to="/blog/2019/SD-Hacks" @click="$scrollToTop">SD Hacks</router-link>
             <h2 id="date">October 2019</h2>
         </h2>
         <p>My first ever hackathon! I was very thrilled to attend this event because I was excited to experience a weekend-long hackathon filled with coding and surrounded with like-minded and passionate...</p>
@@ -160,54 +160,49 @@
     <!-- My guiding principles -->
     <div class="post">
         <h2>
-            <router-link to="/blog/Sample" @click="$scrollToTop">My guiding principles</router-link>
+            <router-link to="/blog/Undated/Guide" @click="$scrollToTop">My guiding principles</router-link>
         </h2>
         <p>International Baccalaureate Programme: I am an IB Diploma recipient. This program requires completion of: 2 High Level classes, 4 Standard Level classes, Theory of Knowledge (TOK) class...</p>
     </div>
 
-    <router-link to="/blog/Sample" @click="$scrollToTop">Yes</router-link>
-
 </template>
 
 <script>
+import Blog from './Blog'
 // import SpringCleaning from '@/components/Blogs/2021/SpringCleaning'
-// import SpringCleaning from './Blogs/2021/SpringCleaning'
-// import Hacktech from './Blogs/2020/Hacktech'
-// import SDHacks from './Blogs/2019/SDHacks'
-// import HelloAgain from './Blogs/2018/HelloAgain'
-// import Villain from './Blogs/2016/Villain'
-// import Nico from './Blogs/2016/Nico'
-// import TakeALoadOff from './Blogs/2016/TakeALoadOff'
-// import KeepWarmStayTrendy from './Blogs/2016/KeepWarmStayTrendy'
-// import MorningHike from './Blogs/2015/MorningHike'
-// import Waves from './Blogs/2015/Waves'
-// import Anchor from './Blogs/2015/Anchor'
-// import Time from './Blogs/2013/Time'
-// import HighSchool from './Blogs/Undated/HighSchool'
-// import Guide from './Blogs/Undated/Guide'
+import SpringCleaning from './Blogs/2021/SpringCleaning'
+import Hacktech from './Blogs/2020/Hacktech'
+import SDHacks from './Blogs/2019/SDHacks'
+import HelloAgain from './Blogs/2018/HelloAgain'
+import Villain from './Blogs/2016/Villain'
+import Nico from './Blogs/2016/Nico'
+import TakeALoadOff from './Blogs/2016/TakeALoadOff'
+import KeepWarmStayTrendy from './Blogs/2016/KeepWarmStayTrendy'
+import MorningHike from './Blogs/2015/MorningHike'
+import Waves from './Blogs/2015/Waves'
+import Anchor from './Blogs/2015/Anchor'
+import Time from './Blogs/2013/Time'
+import HighSchool from './Blogs/Undated/HighSchool'
+import Guide from './Blogs/Undated/Guide'
 
 export default {
-    name: "Blog",
-    methods: {
-        scrollToTop() {
-            window.scrollTo(0,0);
-        }
-    },
+    name: "Blogs",
     components: {
-        // SpringCleaning,
-        // Hacktech,
-        // SDHacks,
-        // HelloAgain,
-        // Villain,
-        // Nico,
-        // TakeALoadOff,
-        // KeepWarmStayTrendy,
-        // MorningHike,
-        // Waves,
-        // Anchor,
-        // Time,
-        // HighSchool,
-        // Guide
+        Blog,
+        SpringCleaning,
+        Hacktech,
+        SDHacks,
+        HelloAgain,
+        Villain,
+        Nico,
+        TakeALoadOff,
+        KeepWarmStayTrendy,
+        MorningHike,
+        Waves,
+        Anchor,
+        Time,
+        HighSchool,
+        Guide
         // 'ItsSpring': SpringCleaning,
         // 'Hack-tech': Hacktech,
         // 'SD-Hacks': SDHacks,

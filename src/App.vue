@@ -11,6 +11,8 @@
 import Toggle from '@/components/Toggle'
 import Navigation from '@/components/Navigation'
 import Tab from '@/components/Tab'
+// import Blogs from '@/components/Blogs'
+// import Blog from '@/components/Blog'
 
 export default {
 	name: 'app',
@@ -24,6 +26,8 @@ export default {
 		Navigation,
 		Toggle,
 		Tab
+		// Blogs,
+		// Blog
 	},
 	created () {
 		window.addEventListener('keyup', this.keyPress)

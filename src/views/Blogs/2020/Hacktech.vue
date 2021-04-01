@@ -1,6 +1,6 @@
 <template>
     <div class="back">
-        <a href="javascript:history.back()">
+        <a @click="goBack">
             <i class="fas fa-angle-double-left"></i>
         </a>
     </div>
@@ -21,6 +21,13 @@
 </template>
 
 <script>
+export default {
+    methods: {
+        goBack() {
+            this.$router.push('/blog');
+        }
+    }
+}
 
 </script>
 
