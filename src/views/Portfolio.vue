@@ -279,6 +279,7 @@ export default {
 
 body {
     background: rgb(255, 255, 255);
+    /* overflow-y: scroll; */
 }
 
 .title {

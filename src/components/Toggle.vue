@@ -20,8 +20,12 @@ export default {
 <style>
 
 .toggle-wrapper {
-    margin-left: 10px;
-    margin-top: 35px;
+    /* margin-left: 10px; */
+    /* margin-top: 35px; */
+    /* padding-left: 25px; */
+    /* position: absolute; */
+    margin: auto;
+    display: none; /* Erase this when ready to work on enabling dark mode again */
 }
 
 .toggle {

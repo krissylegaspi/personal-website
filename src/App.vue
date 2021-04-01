@@ -29,7 +29,7 @@ export default {
 		window.addEventListener('keyup', this.keyPress)
 	},
 	methods: {
-		keypress (e) {
+		keypress () {
 			if (e.key === 't') {
 				this.toggle()
 			}
@@ -40,6 +40,9 @@ export default {
 			} else {
 				this.mode = "dark"
 			}
+		},
+		scrolltoTop() {
+			window.scrollTo(0,0);
 		}
 	}
 }
@@ -59,6 +62,11 @@ export default {
 } 
 */
 
+html {
+    margin-left: calc(100vw - 100%); /* Need to redo in order for this to work with dark mode enabled */
+    margin-right: 0;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -66,6 +74,7 @@ export default {
 }
 
 .app {
+	/* overflow-y: scroll; */
 	width: 100%;
 	min-height: 100vh;
     background: white;

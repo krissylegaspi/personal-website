@@ -4,7 +4,7 @@
             <body>
             <h2>Hi, my name is Kristine</h2>
                 <p>
-                    I also go by Krissy. I am currently a graduate student.
+                    I also go by Krissy. I can speak two languages (English and Filipino) and understand three fluently (English, Filipino, and Ilocano). I have high-level academic experience in Spanish and I am self-taught in Japanese. If my house was on fire and I could only save one thing, it would 
                 </p>
             <h2>In the past</h2>
                 <p>
@@ -50,7 +50,7 @@
                     I am a member of <p1>Society of Women Engineers</p1>.
                 </p>
             
-            <h2>On my free time</h2>
+            <h2>In my free time</h2>
             
                 <p>
                     I like to read, draw, film, snowboard, camp, and travel.
@@ -97,7 +97,7 @@ export default {
     margin-left: auto;
     margin-right: auto;
     justify-content: space-around;
-    max-width: 800px;
+    max-width: 750px;
 }
 
 .text {
@@ -108,7 +108,7 @@ export default {
 }
 
 .about .text body {
-    font-size: 20px;
+    font-size: 18px;
     margin-bottom: 30px;
 }
 
@@ -121,6 +121,11 @@ ul {
     text-decoration: none;
     cursor: pointer;
     font-style: italic;
+}
+
+.about .text body a:hover {
+    /* opacity: 80%; */
+    text-decoration: underline;
 }
 
 .about .text body p {
@@ -139,7 +144,7 @@ ul {
 }
 
 h2 {
-    font-size:22px;
+    font-size:20px;
     margin-top: 20px;
     margin-bottom: 15px;
     font-family: 'Roboto Mono', monospace;
